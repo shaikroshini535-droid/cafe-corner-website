@@ -8,6 +8,9 @@
     <title>Cafe Corner | Ongole</title>
 
     <link rel="stylesheet" href="style.css">
+    <script type="module"
+src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+</script>
 </head>
 
 <body>
@@ -83,7 +86,47 @@
         </p>
 
     </section>
+    
+    <section class="three-d-section">
 
+    <div class="three-d-content">
+
+        <div class="three-d-text">
+            <span class="three-d-tag">☕ INTERACTIVE EXPERIENCE</span>
+
+            <h2>Experience Coffee in <span>3D</span></h2>
+
+            <p>
+                Take a closer look at the coffee experience at Cafe Corner.
+                Rotate, zoom and explore our coffee mug in an interactive
+                3D view.
+            </p>
+
+            <div class="model-features">
+                <span>🖱️ Drag to Rotate</span>
+                <span>🔍 Scroll to Zoom</span>
+                <span>☕ Explore in 3D</span>
+            </div>
+        </div>
+
+
+        <div class="three-d-model">
+
+            <model-viewer
+                src="coffee_mug_school_project.glb"
+                alt="Cafe Corner Coffee Mug 3D Model"
+                auto-rotate
+                camera-controls
+                shadow-intensity="1"
+                exposure="1"
+                interaction-prompt="auto">
+            </model-viewer>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- MENU -->
 
