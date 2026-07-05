@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cafe Corner | Ongole</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Cafe <span>Corner</span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" onclick="toggleNavbar()">
+            ☰
+        </button>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>
+                Cafe <span>Corner</span>
+            </h1>
+
+            <p class="tagline">
+                Delicious Food. Fresh Taste. Quick Bites.
+            </p>
+
+            <a href="#menu" class="main-btn">
+                Explore Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <p class="section-small-title">OUR STORY</p>
+
+        <h2>Your Favourite Food Corner</h2>
+
+        <p class="about-text">
+            Cafe Corner brings together delicious quick bites,
+            comforting flavours and refreshing drinks in one place.
+            From grilled sandwiches and loaded burgers to Maggi,
+            crispy snacks, pasta and colourful mocktails, there is
+            something for every craving.
+        </p>
+
+        <p class="about-text">
+            Whether you are catching up with friends or simply
+            looking for a delicious snack, Cafe Corner is ready
+            to make every food moment special.
+        </p>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="menu" id="menu">
+
+        <p class="section-small-title">DISCOVER</p>
+
+        <h2>Popular Cravings</h2>
+
+        <p class="section-description">
+            Fresh flavours and delicious quick bites made for every mood.
+        </p>
+
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🥪</div>
+
+                <h3>Fresh Sandwiches</h3>
+
+                <p>
+                    Grilled favourites packed with fresh ingredients
+                    and delicious flavours.
+                </p>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🍔</div>
+
+                <h3>Loaded Burgers</h3>
+
+                <p>
+                    Crispy patties, toasted buns and flavours made
+                    for serious cravings.
+                </p>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">🍹</div>
+
+                <h3>Refreshing Mocktails</h3>
+
+                <p>
+                    Cool, colourful and refreshing drinks for
+                    the perfect food moment.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a href="#" class="full-menu-btn" onclick="openMenu(event)">
+            View Full Menu
+        </a>
+
+    </section>
+
+
+    <!-- FULL MENU -->
+
+    <div class="menu-modal" id="menuModal">
+
+        <div class="menu-modal-content">
+
+            <button
+                class="close-menu"
+                onclick="closeMenu()"
+                aria-label="Close menu"
+            >
+                ×
+            </button>
+
+
+            <div class="menu-popup-heading">
+
+                <p class="section-small-title">OUR MENU</p>
+
+                <h2>Choose Your Craving</h2>
+
+                <p>
+                    Explore the flavours of Cafe Corner.
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="category-tabs">
+
+                <button
+                    class="category-btn active"
+                    onclick="showCategory('sandwiches', this)"
+                >
+                    Sandwiches
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('burgers', this)"
+                >
+                    Burgers
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('maggi', this)"
+                >
+                    Maggi
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('fries', this)"
+                >
+                    Fries
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('snacks', this)"
+                >
+                    Snacks
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('chicken', this)"
+                >
+                    Fried Chicken
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('egg', this)"
+                >
+                    Egg Specials
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('mocktails', this)"
+                >
+                    Mocktails
+                </button>
+
+                <button
+                    class="category-btn"
+                    onclick="showCategory('pasta', this)"
+                >
+                    Pasta
+                </button>
+
+            </div>
+
+
+            <!-- SANDWICHES -->
+
+            <div class="menu-category active-category" id="sandwiches">
+
+                <h3 class="category-title">🥪 Sandwiches</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Veg Grilled Sandwich</h4>
+                        <span class="price">₹140</span>
+                    </div>
+
+                    <p>
+                        A classic grilled sandwich loaded with fresh
+                        capsicum, onion and juicy tomatoes, layered
+                        with creamy butter and mild spices.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Paneer Tikka Sandwich</h4>
+                        <span class="price">₹180</span>
+                    </div>
+
+                    <p>
+                        Soft cubes of paneer marinated in aromatic spices,
+                        grilled to smoky perfection and layered with fresh
+                        onions, capsicum and tangy sauces.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Peri Peri Paneer Tikka Sandwich</h4>
+                        <span class="price">₹190</span>
+                    </div>
+
+                    <p>
+                        Juicy paneer tikka tossed in bold peri peri spices,
+                        layered with crunchy onions and capsicum.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Nutella Cheese Sandwich</h4>
+                        <span class="price">₹160</span>
+                    </div>
+
+                    <p>
+                        A delightful blend of rich Nutella and gooey melted
+                        cheese layered between soft bread and butter toasted
+                        till golden and crisp.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Tikka Sandwich</h4>
+                        <span class="price">₹190</span>
+                    </div>
+
+                    <p>
+                        Tender chicken tikka marinated in aromatic spices,
+                        grilled to smoky perfection and layered with fresh
+                        onions, capsicum and creamy sauces.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Peri Peri Chicken Sandwich</h4>
+                        <span class="price">₹200</span>
+                    </div>
+
+                    <p>
+                        Succulent chicken tikka tossed in bold peri peri
+                        spices, layered with crunchy onions, capsicum and
+                        creamy sauces.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BURGERS -->
+
+            <div class="menu-category" id="burgers">
+
+                <h3 class="category-title">🍔 Burgers</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Veg Burger</h4>
+                        <span class="price">₹140</span>
+                    </div>
+
+                    <p>
+                        A crispy veg patty loaded with garden-fresh
+                        vegetables, crunchy lettuce, onions and creamy
+                        sauces inside soft toasted buns.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Burger</h4>
+                        <span class="price">₹160</span>
+                    </div>
+
+                    <p>
+                        A juicy crispy chicken patty layered with fresh
+                        lettuce, onion and creamy sauces, served in soft
+                        toasted buns.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Spicy Special Chicken Burger</h4>
+                        <span class="price">₹170</span>
+                    </div>
+
+                    <p>
+                        A fiery crispy chicken patty seasoned with special
+                        spices, layered with fresh lettuce, onions and
+                        zesty sauces inside soft toasted buns.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Zinger Burger</h4>
+                        <span class="price">₹200</span>
+                    </div>
+
+                    <p>
+                        Crispy, juicy and loaded with flavour. A perfectly
+                        seasoned golden fried chicken fillet creates the
+                        ultimate comfort bite.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAGGI -->
+
+            <div class="menu-category" id="maggi">
+
+                <h3 class="category-title">🍜 Maggi</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Veggie Maggi</h4>
+                        <span class="price">₹89</span>
+                    </div>
+
+                    <p>
+                        Classic Maggi noodles cooked with fresh vegetables,
+                        aromatic spices and a touch of butter for extra flavour.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Tomato Maggi</h4>
+                        <span class="price">₹100</span>
+                    </div>
+
+                    <p>
+                        Classic Maggi noodles cooked in a tangy tomato-based
+                        sauce with aromatic spices and a hint of butter.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Corn Cheese Maggi</h4>
+                        <span class="price">₹120</span>
+                    </div>
+
+                    <p>
+                        Classic Maggi noodles cooked with sweet corn,
+                        gooey melted cheese and signature spices for a
+                        rich and creamy twist.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Egg Maggi</h4>
+                        <span class="price">₹120</span>
+                    </div>
+
+                    <p>
+                        Classic Maggi noodles cooked with fluffy scrambled
+                        eggs, aromatic spices and a touch of butter.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Maggi</h4>
+                        <span class="price">₹130</span>
+                    </div>
+
+                    <p>
+                        Classic Maggi noodles cooked with tender chicken
+                        pieces, aromatic spices and a touch of butter.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Corn Cheese Chicken Maggi</h4>
+                        <span class="price">₹140</span>
+                    </div>
+
+                    <p>
+                        Maggi noodles cooked with tender chicken pieces,
+                        sweet corn and gooey melted cheese, blended with
+                        aromatic spices.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Cheese Maggi</h4>
+                        <span class="price">₹110</span>
+                    </div>
+
+                    <p>
+                        Classic Maggi noodles cooked with rich melted cheese
+                        and signature spices for a creamy comforting delight.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRIES -->
+
+            <div class="menu-category" id="fries">
+
+                <h3 class="category-title">🍟 Fries</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Classic French Fries</h4>
+                        <span class="price">₹100</span>
+                    </div>
+
+                    <p>
+                        Golden crispy fries lightly seasoned with salt and
+                        fried to perfection. Crunchy outside and fluffy inside.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Peri Peri French Fries</h4>
+                        <span class="price">₹120</span>
+                    </div>
+
+                    <p>
+                        Golden crispy fries tossed in bold peri peri
+                        seasoning for a spicy and tangy kick.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Cheese On Fries</h4>
+                        <span class="price">₹130</span>
+                    </div>
+
+                    <p>
+                        Crispy golden fries smothered in rich melted cheese
+                        for a creamy and indulgent treat.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SNACKS -->
+
+            <div class="menu-category" id="snacks">
+
+                <h3 class="category-title">🍿 Snacks</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Veg Nuggets [8 Pieces]</h4>
+                        <span class="price">₹180</span>
+                    </div>
+
+                    <p>
+                        Crispy golden veg nuggets made with a flavorful
+                        mix of vegetables and fried to perfection.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Veg Spring Rolls [8 Pieces]</h4>
+                        <span class="price">₹180</span>
+                    </div>
+
+                    <p>
+                        Crispy golden rolls stuffed with fresh vegetables
+                        and aromatic spices, fried to perfection.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Corn Samosa [6 Pieces]</h4>
+                        <span class="price">₹130</span>
+                    </div>
+
+                    <p>
+                        Crispy golden samosas filled with sweet corn,
+                        mild spices and herbs.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Nuggets [8 Pieces]</h4>
+                        <span class="price">₹200</span>
+                    </div>
+
+                    <p>
+                        Crispy golden chicken nuggets made from tender
+                        juicy chicken and fried to perfection.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Spring Rolls [8 Pieces]</h4>
+                        <span class="price">₹200</span>
+                    </div>
+
+                    <p>
+                        Crispy golden rolls stuffed with tender chicken,
+                        fresh vegetables and aromatic flavours.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Samosa [6 Pieces]</h4>
+                        <span class="price">₹160</span>
+                    </div>
+
+                    <p>
+                        Crispy golden samosas filled with minced chicken,
+                        aromatic spices and herbs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHICKEN -->
+
+            <div class="menu-category" id="chicken">
+
+                <h3 class="category-title">🍗 Fried Chicken Specials</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Cafe Corner Fried Chicken Wings [5 Pieces]</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        Crispy golden fried chicken wings seasoned with
+                        special spices and fried to perfection.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Fried Chicken Popcorn</h4>
+                        <span class="price">₹180</span>
+                    </div>
+
+                    <p>
+                        Bite-sized tender chicken coated in crispy seasoned
+                        batter and fried till golden perfection.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Cafe Corner Fried Chicken [2 Pieces]</h4>
+                        <span class="price">₹129</span>
+                    </div>
+
+                    <p>
+                        Crispy golden fried chicken seasoned with special
+                        spices and fried to perfection.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Cafe Corner Fried Chicken Lollipop [4 Pieces]</h4>
+                        <span class="price">₹180</span>
+                    </div>
+
+                    <p>
+                        Four crispy chicken lollipops marinated in special
+                        spices and fried till golden perfection.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EGG -->
+
+            <div class="menu-category" id="egg">
+
+                <h3 class="category-title">🍳 Egg Specials</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Double Egg Bread Omelette</h4>
+                        <span class="price">₹120</span>
+                    </div>
+
+                    <p>
+                        A fluffy double egg omelette cooked with onion,
+                        green chillies and mild spices, layered between
+                        soft bread slices and toasted to perfection.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOCKTAILS -->
+
+            <div class="menu-category" id="mocktails">
+
+                <h3 class="category-title">🍹 Mocktails</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Classic Mojito</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        A non-alcoholic refreshing blend of mint leaves,
+                        lime juice and fizzy soda with a hint of sweetness.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Blue Curacao</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        A vibrant non-alcoholic mocktail made with blue
+                        curacao syrup, citrus notes and fizzy soda.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Watermelon Mocktail</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        Fresh watermelon juice blended with a hint of lime
+                        and chilled soda for a light refreshing drink.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Kala Khatta Mocktail</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        A nostalgic blend of kala khatta syrup with tangy
+                        lemon notes and chilled soda.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Green Apple</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        Tangy green apple crush with fresh mint leaves,
+                        lemon and chilled soda for the perfect fizzy kick.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chilli Guava Mocktail</h4>
+                        <span class="price">₹150</span>
+                    </div>
+
+                    <p>
+                        A refreshing non-alcoholic fusion of sweet guava
+                        juice, zesty lime and a spicy chilli kick.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASTA -->
+
+            <div class="menu-category" id="pasta">
+
+                <h3 class="category-title">🍝 Pasta</h3>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Red Sauce Pasta</h4>
+                        <span class="price">₹190</span>
+                    </div>
+
+                    <p>
+                        Pasta tossed in a rich tangy tomato-based sauce,
+                        infused with herbs and spices and finished with
+                        a touch of butter.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Pink Sauce Pasta</h4>
+                        <span class="price">₹200</span>
+                    </div>
+
+                    <p>
+                        Pasta tossed in a creamy blend of rich white sauce
+                        and tangy tomato sauce, infused with herbs and spices.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>White Sauce Pasta</h4>
+                        <span class="price">₹230</span>
+                    </div>
+
+                    <p>
+                        Creamy pasta tossed in rich white sauce made with
+                        butter, milk and herbs, finished with a smooth
+                        cheesy touch.
+                    </p>
+
+                    <span class="veg-badge">● VEGETARIAN</span>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Red Sauce Pasta</h4>
+                        <span class="price">₹250</span>
+                    </div>
+
+                    <p>
+                        Pasta tossed in rich tangy tomato-based sauce with
+                        tender chicken pieces, herbs and spices.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken White Sauce Pasta</h4>
+                        <span class="price">₹250</span>
+                    </div>
+
+                    <p>
+                        Creamy pasta tossed in rich white sauce with tender
+                        chicken pieces, seasoned with herbs and butter.
+                    </p>
+
+                </div>
+
+
+                <div class="food-item">
+
+                    <div class="food-heading">
+                        <h4>Chicken Pink Sauce Pasta</h4>
+                        <span class="price">₹250</span>
+                    </div>
+
+                    <p>
+                        Pasta tossed in a creamy blend of white sauce and
+                        tangy tomato sauce with tender chicken pieces and
+                        aromatic herbs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- GALLERY -->
+
+    <section class="gallery" id="gallery">
+
+        <p class="section-small-title">OUR GALLERY</p>
+
+        <h2>Taste The Corner</h2>
+
+        <p class="gallery-text">
+            Delicious food, fresh flavours and cravings worth remembering.
+        </p>
+
+
+        <div class="gallery-container">
+
+            <div class="gallery-card">
+                <img
+                    src="https://images.unsplash.com/photo-1553909489-cd47e0907980"
+                    alt="Sandwich"
+                >
+                <div class="gallery-overlay">
+                    <h3>Fresh Sandwiches</h3>
+                </div>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
+                    alt="Burger"
+                >
+                <div class="gallery-overlay">
+                    <h3>Loaded Burgers</h3>
+                </div>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="https://images.unsplash.com/photo-1551183053-bf91a1d81141"
+                    alt="Pasta"
+                >
+                <div class="gallery-overlay">
+                    <h3>Delicious Pasta</h3>
+                </div>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877"
+                    alt="French Fries"
+                >
+                <div class="gallery-overlay">
+                    <h3>Crispy Fries</h3>
+                </div>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="https://images.unsplash.com/photo-1527477396000-e27163b481c2"
+                    alt="Fried Chicken"
+                >
+                <div class="gallery-overlay">
+                    <h3>Chicken Specials</h3>
+                </div>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="https://images.unsplash.com/photo-1544145945-f90425340c7e"
+                    alt="Mocktails"
+                >
+                <div class="gallery-overlay">
+                    <h3>Refreshing Mocktails</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <p class="section-small-title">VISIT US</p>
+
+        <h2>Come & Taste Your Cravings</h2>
+
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📍</div>
+
+                <h3>Our Location</h3>
+
+                <p>
+                    Opposite Sri Harshini Degree College,
+                    South Bypass, Gandhi Nagar,
+                    Siva Prasad Colony, Ongole,
+                    Andhra Pradesh - 523002
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Cafe+Corner+Ongole"
+                    target="_blank"
+                    class="direction-btn"
+                >
+                    Get Directions
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">🍽️</div>
+
+                <h3>Good Food Awaits</h3>
+
+                <p>
+                    Sandwiches, burgers, Maggi, fries, snacks,
+                    fried chicken, mocktails and delicious pasta.
+                </p>
+
+                <p class="highlight-text">
+                    Visit Cafe Corner and satisfy your cravings.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="contact-ending-text">
+            Your next favourite food experience is waiting at Cafe Corner.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            Cafe <span>Corner</span>
+        </h3>
+
+        <p>
+            Delicious Food • Fresh Taste • Quick Bites
+        </p>
+
+        <p class="copyright">
+            © 2026 Cafe Corner. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
